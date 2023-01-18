@@ -10,10 +10,10 @@
 
     <!-- my style -->
    <link rel="stylesheet" href="css/style.css">
+   <!-- axios -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
    <!-- vue js -->
    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <!-- js -->
    <script defer src="js/script.js"></script>
     <title>Document</title>
@@ -21,7 +21,7 @@
 <body>
     <div class="container" id="root">
         <ul>
-            <li></li>
+            <li v-for="email in emails">{{ email }}</li>
         </ul>
     </div>
 </body>
